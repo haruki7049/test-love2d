@@ -1,3 +1,3 @@
-# test-ruby2d
+# test-love2d
 
-This is for my practice to use [ruby2d](https://www.ruby2d.com/)
+This is for my practice to use [love2d](https://github.com/love2d/love)

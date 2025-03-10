@@ -17,11 +17,8 @@
       perSystem = { pkgs, lib, ... }: {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = [
-            # Interpreter
-            pkgs.ruby
-
-            # Formatter
-            pkgs.rubyPackages.rubocop
+            # Nix-lang
+            pkgs.nil
           ];
         };
       };
