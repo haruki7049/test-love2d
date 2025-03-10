@@ -19,6 +19,9 @@
           nativeBuildInputs = [
             # Nix-lang
             pkgs.nil
+
+            # love2d
+            pkgs.love
           ];
         };
       };
