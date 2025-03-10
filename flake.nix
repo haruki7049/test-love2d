@@ -13,10 +13,13 @@
     inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = import inputs.systems;
 
-      perSystem = { pkgs, ... }: {
+      perSystem = { pkgs, lib, ... }: {
         devShells.default = pkgs.mkShell {
           nativeBuildInputs = [
+            # Interpreter
             pkgs.ruby
+
+            # Formatter
             pkgs.rubyPackages.rubocop
           ];
         };
